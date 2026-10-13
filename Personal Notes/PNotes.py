@@ -2,12 +2,14 @@
 
 import os
 
+#Variables
 FilePath = "C:\\Users\\User\\Downloads\\Personal Notes\\PNotes.txt"
 deleteLn = None
 Choice = None
 NewNote = None
 lines = None
 
+#Function to open the file (in read mode)
 def openfile(): 
     if os.path.exists(FilePath):
         with open (FilePath, "r") as f:
